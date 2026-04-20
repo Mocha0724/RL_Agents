@@ -74,17 +74,18 @@ for step = 1, ...:
 | target entropy | -dim(A) |
 | α 初值 | 0.2 |
 
-## 6.6 与定位/导航场景
+## 6.6 典型应用场景
 
+- 机器人/机械臂连续控制
 - 自动驾驶仿真中的转向/加减速控制（连续动作）
-- IMU/GPS 融合中卡尔曼滤波器**Q/R 矩阵参数自适应**（连续）
+- IMU/GPS 融合中卡尔曼滤波器 **Q/R 矩阵参数自适应**
 
 ## 进一步阅读
 
 - Haarnoja et al. 2018, ["Soft Actor-Critic"](https://arxiv.org/abs/1801.01290)
 - 推荐阅读 [CleanRL SAC 单文件实现](https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/sac_continuous_action.py)
 
-## 面试常考点
+## 思考题
 
 - SAC 为什么能在连续控制上超过 PPO？
 - 解释 reparameterization trick

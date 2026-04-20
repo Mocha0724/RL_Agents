@@ -83,7 +83,7 @@ def dpo_loss(model, ref_model, x, y_w, y_l, beta=0.1):
 - DPO: Rafailov et al. 2023, ["Direct Preference Optimization"](https://arxiv.org/abs/2305.18290)
 - DeepSeek-R1: 2024 报告 https://arxiv.org/abs/2501.12948
 
-## 面试常考点
+## 思考题
 
 - 解释 RLHF 三阶段
 - 为什么 DPO 不需要 RM？推导一下闭式解

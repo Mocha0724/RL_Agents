@@ -33,7 +33,7 @@ with torch.no_grad():
 
 - van Hasselt et al. 2015, ["Deep Reinforcement Learning with Double Q-learning"](https://arxiv.org/abs/1509.06461)
 
-## 面试常考点
+## 思考题
 
 - 为什么 max 会导致高估？
 - 怎么用一行代码修复？

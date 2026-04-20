@@ -110,9 +110,9 @@ for episode = 1, M:
 | Buffer 太小 | 样本相关性大 | 至少 10⁵ |
 | 训练初期就更新 | warmup 不足 | 等 buffer 填到 batch_size 再 train |
 
-## 1.6 与定位场景的桥接
+## 1.6 一个具象应用例子：卫星选择
 
-**问题**：在 GNSS 接收机有 N 颗可见卫星时，**选哪些卫星组合**用于定位计算（卫星选择问题）。
+**问题**：在 GNSS 接收机有 N 颗可见卫星时，**选哪些卫星组合**用于定位计算。
 
 | MDP 元素 | 设计 |
 |---------|------|
@@ -128,7 +128,7 @@ for episode = 1, M:
 - [Mnih et al. 2015, "Human-level control through deep RL" (Nature)](https://www.nature.com/articles/nature14236)
 - [CleanRL DQN 实现（单文件，强烈推荐读）](https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/dqn.py)
 
-## 面试常考点
+## 思考题
 
 - 为什么需要 target network？
 - DQN 为什么用 replay buffer，而 PPO 不需要？

@@ -32,7 +32,7 @@ flowchart TD
     REI --> AC[Actor-Critic]
     AC --> A2C[A2C/A3C 2016<br/>同步/异步并行]
     AC --> TRPO[TRPO 2015<br/>信赖域约束]
-    TRPO --> PPO[PPO 2017<br/>简化 TRPO ★工业首选]
+    TRPO --> PPO[PPO 2017<br/>简化 TRPO，应用最广]
     AC --> DPG[DPG 2014<br/>确定性策略]
     DPG --> DDPG[DDPG 2016<br/>+DQN 技巧]
     DDPG --> TD3[TD3 2018<br/>双 Critic + 延迟]
@@ -41,14 +41,14 @@ flowchart TD
     style SAC fill:#fbf
 ```
 
-## 工业选型经验
+## 选型参考
 
 | 场景 | 推荐 |
 |-----|------|
 | 离散动作、稳定性优先 | **PPO** |
 | 连续动作、机器人 | **SAC** |
 | LLM 微调（RLHF） | **PPO / GRPO** |
-| 极致样本效率 | **SAC** / Model-based |
+| 样本效率优先 | **SAC** / Model-based |
 | 大规模并行训练 | **PPO + IMPALA** |
 
 ## 自检

@@ -103,7 +103,7 @@ flowchart LR
 - IQL: Kostrikov et al. 2021, ["Offline RL with Implicit Q-Learning"](https://arxiv.org/abs/2110.06169)
 - Decision Transformer: Chen et al. 2021
 
-## 面试常考点
+## 思考题
 
 - 为什么 off-policy 算法（如 SAC）直接用在离线数据上会失败？
 - 解释 CQL 的核心思想

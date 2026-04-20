@@ -1,6 +1,6 @@
-# 06 定位算法专题：RL 在定位/导航中的应用 ★
+# 06 应用专题：RL 在定位/导航中的应用
 
-> **本章是整个仓库的核心**。学完前 5 章后，请把至少 4 周时间投入这里。
+> **本章是一个完整的应用案例集**：把前 5 章的算法工具，落到 GNSS、地图匹配、传感器融合等具体场景上。如果对该方向不感兴趣，可以跳过。
 
 ## 章节速览
 
@@ -42,7 +42,7 @@ mindmap
 
 ## 工业落地的真实困难
 
-在你正式入职前，请清醒地认识到：
+实际部署 RL 到定位系统时，有几点必须认识到：
 
 | 困难 | 为什么 |
 |-----|-------|
@@ -60,10 +60,10 @@ mindmap
 
 ---
 
-## 本章学习产出（建议自我检查）
+## 学习产出（建议自我检查）
 
-- [ ] 能用一张 PPT 讲清楚 RLOMM 的 OMDP 建模
-- [ ] 能在白板上推 NAVIGATION 2024 的 GNSS 修正 reward 设计
+- [ ] 能讲清楚 RLOMM 的 OMDP 建模
+- [ ] 能默写 NAVIGATION 2024 的 GNSS 修正 reward 设计思路
 - [ ] 完成 [Project 4: Map Matching RL](../07_projects/project4_map_matching_rl/) 的 demo
 - [ ] 完成 [Project 5: GNSS Correction RL](../07_projects/project5_gnss_correction_rl/) 的 demo
 - [ ] 至少精读 5 篇 [papers.md](./papers.md) 中的论文，写读书笔记

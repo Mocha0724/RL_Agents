@@ -24,4 +24,4 @@
 - [ ] 知道为什么策略梯度里要用 log
 - [ ] 能用 PyTorch 写一个 3 层 MLP 并训练它拟合 sin(x)
 - [ ] 跑通 `gymnasium.make("CartPole-v1")` 的 random policy
-- [ ] 装好 conda 环境，`import torch; torch.cuda.is_available()` 能正常返回
+- [ ] 装好 Python 环境，`import torch; torch.cuda.is_available()` 能正常返回

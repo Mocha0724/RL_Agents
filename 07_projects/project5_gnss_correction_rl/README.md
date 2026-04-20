@@ -1,4 +1,4 @@
-# Project 5: 基于 RL 的 GNSS 定位修正 ★
+# Project 5: 基于 RL 的 GNSS 定位修正
 
 **难度**：⭐⭐⭐⭐⭐ · **预计耗时**：2 周
 
@@ -50,10 +50,10 @@
 | EKF | ? | ? | ? |
 | RL (yours) | ? | ? | ? |
 
-## 进阶（**这就是面试时的高光时刻**）
+## 进阶玩法
 
 - 用真实数据：Google Smartphone Decimeter Challenge ([Kaggle 数据](https://www.kaggle.com/competitions/google-smartphone-decimeter-challenge))
 - 实现 Adaptive Reward Augmentation（NAVIGATION 2024 创新）
 - 加 IMU 数据，做 Tightly Coupled
-- 把 RL 模型蒸馏成端侧 < 1MB
-- 写一个内部技术分享 PPT
+- 把 RL 模型蒸馏成端侧小模型 (< 1MB)
+- 整理为一篇技术博客或会议 poster

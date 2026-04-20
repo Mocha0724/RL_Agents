@@ -56,19 +56,19 @@ graph LR
 - 用 RL 优化 tool-use 策略（reward = 任务完成度）
 - 代表：Toolformer, Gorilla, ToolLLM
 
-## 5.5 给定位场景的小例子（虚构）
+## 5.5 一个面向运维场景的小例子
 
 ```python
-def localization_assist_tools():
+def diagnostic_tools():
     return [
-        {"name": "query_high_def_map", "params": {"lat": float, "lon": float, "radius": float}},
-        {"name": "query_satellite_status", "params": {"prn_list": list}},
-        {"name": "run_kalman_filter", "params": {"obs": list}},
+        {"name": "query_logs", "params": {"service": str, "time_range": str}},
+        {"name": "run_metric_query", "params": {"metric": str, "filters": dict}},
+        {"name": "fetch_recent_deploys", "params": {"service": str}},
         {"name": "explain_anomaly", "params": {"trace_id": str}},
     ]
 ```
 
-→ 内部"定位排障 Agent"可以自己调用这些工具排查为什么某用户某时刻定位漂移。
+→ 一个"排障 Agent"可以自动调用这些工具去定位某次故障的原因，体现 LLM Agent 的「工具组合」能力。
 
 ## 进一步阅读
 

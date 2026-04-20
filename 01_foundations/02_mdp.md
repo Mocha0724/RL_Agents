@@ -122,9 +122,9 @@ $$
 
 ---
 
-## 2.7 把定位问题建模成 MDP（思考练习）
+## 2.7 把一个实际问题建模成 MDP（思考练习）
 
-**任务**：在 GNSS 城市峡谷场景下，输出修正后的位置。
+**示例任务**：GNSS 定位修正
 
 | 元素 | 一种建模 |
 |------|---------|
@@ -133,7 +133,7 @@ $$
 | Reward | $-\|\hat{p} - p_{\text{truth}}\|_2$（如果有真值）<br>或 $-\|\hat{p} - p_{\text{map\_road}}\|_2$（如果只有道路约束） |
 | Discount | 0.95 |
 
-> ⚠️ 实际 paper 里 reward 设计是核心难点，第 6 章会详细分析 *Adaptive Reward Augmentation* 这篇 NAVIGATION 2024 的论文。
+> 实际 paper 里 reward 设计是核心难点，第 6 章会详细分析 *Adaptive Reward Augmentation* 这篇 NAVIGATION 2024 的论文。
 
 ---
 
@@ -142,8 +142,8 @@ $$
 - Sutton & Barto Ch.3
 - Puterman《Markov Decision Processes》—— 学术圣经
 
-## 面试常考点
+## 思考题
 
 - 写出 MDP 五元组，并解释 $\gamma$ 的作用
 - 什么是 POMDP？怎么处理？
-- 如何把一个实际业务问题建模成 MDP？（必考开放题，准备 1-2 个自己的例子）
+- 把一个你熟悉的实际问题建模成 MDP，写出五元组

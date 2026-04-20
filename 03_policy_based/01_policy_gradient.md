@@ -105,7 +105,7 @@ $G_t$ 是单条轨迹的随机变量，方差极大 → 梯度估计噪声大 �
 - Williams 1992, "Simple Statistical Gradient-Following Algorithms"
 - [OpenAI Spinning Up: Intro to Policy Gradient](https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html)
 
-## 面试常考点
+## 思考题
 
 - 推导策略梯度定理
 - 为什么需要 baseline？最优 baseline 是什么？

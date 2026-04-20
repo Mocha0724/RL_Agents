@@ -91,11 +91,11 @@ result = crew.kickoff()
 | 业务快速原型 | **CrewAI** |
 | 生产级托管 | **Claude Managed Agents** |
 
-## 4.6 给定位算法岗的建议
+## 4.6 入门建议
 
-短期不会用到这些框架。但可能场景：
-- 内部工具开发：bug 排查 agent、数据质量检查 agent
-- 用 LLM agent 自动化数据标注流程
+- 不要一上来就上 LangChain，**先用裸 SDK + function calling 写一个最小 agent**，理解每一步在做什么
+- 真正需要复杂 graph 时再引入 LangGraph
+- 多 agent 协作场景再考虑 AutoGen / CrewAI
 
 ## 进一步阅读
 

@@ -76,13 +76,13 @@ for iteration = 1, ...:
 | `entropy_coef` | 0.01 | 探索鼓励 |
 | `clip_grad` | 0.5 | 梯度裁剪 |
 
-## 3.5 为什么 PPO 工业首选？
+## 3.5 PPO 为什么应用如此广泛
 
-1. **稳定**：clip 让你不太可能炸
-2. **简单**：没有二阶优化、没有 replay buffer 复杂管理
-3. **通用**：离散/连续动作都行
-4. **可并行**：n 个 env 并行采样
-5. **超参鲁棒**：默认值在大多数任务上 work
+1. **稳定**：clip 让训练不容易崩
+2. **简单**：没有二阶优化、没有 replay buffer 的复杂管理
+3. **通用**：离散/连续动作都支持
+4. **可并行**：天然适合多个 env 并行采样
+5. **超参鲁棒**：默认值在大多数任务上都能 work
 
 ## 3.6 PPO 在 RLHF 中的角色
 
@@ -113,7 +113,7 @@ ChatGPT/Claude 等 LLM 训练第三阶段就是 PPO（最近也有 DPO/GRPO 等�
 - Schulman et al. 2017, ["Proximal Policy Optimization Algorithms"](https://arxiv.org/abs/1707.06347)
 - [37 Implementation Details of PPO](https://iclr-blog-track.github.io/2022/03/25/ppo-implementation-details/) ← **强烈推荐**
 
-## 面试常考点
+## 思考题
 
 - PPO 与 TRPO 区别
 - 为什么用 clip 而不是 KL penalty？
